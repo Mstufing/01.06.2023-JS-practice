@@ -1,3 +1,5 @@
+// todo ----- 01.06.2023 -----
+
 // ? Task #1
 // ? Enharmonic Equivalents
 
@@ -362,4 +364,49 @@
 //     let res = document.querySelector(".result");
 
 //     res.innerHTML = letterCounter(arrInput.value.trim().split(" "), input.value);
+// }
+
+// todo ----- 02.06.2023 -----
+
+// ? Task #21
+// ? Inclusive Array Ranges
+
+// function inclusiveArray(startNum, endNum) {
+// 	let arr = [];
+	
+// 	for(let i = startNum; i <= endNum; i++)
+// 		{
+// 			arr.push(i);
+// 		}
+// 	if(endNum  < startNum)
+// 		return [startNum];
+// 	return arr;
+// }
+
+// let myBtn = document.querySelector(".my-button");
+
+// myBtn.onclick = () => {
+//     let firstInput = document.querySelector(".inp1");
+//     let secondInput = document.querySelector(".inp2");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = inclusiveArray(firstInput.value, secondInput.value);
+// }
+
+// ? Task #22
+// ? Fruit Salad 🍇🍓🍎
+
+// function fruitSalad(arr) {
+// 	let res1 = arr.map(elem => elem.slice(0, Math.floor(elem.length / 2)));
+// 	let res2 = arr.map(elem => elem.slice(Math.floor(elem.length / 2), elem.length));
+// 	return res1.concat(res2).sort().join("");
+// }
+
+// let myBtn = document.querySelector(".my-button");
+
+// myBtn.onclick = () => {
+//     let firstInput = document.querySelector(".inp1");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = fruitSalad(firstInput.value.trim().split(" "));
 // }
