@@ -245,3 +245,121 @@
 
 //     res.innerHTML = parallelResistance(arrInput.value.trim().split(" "));
 // }
+
+// ? Task #14
+// ? Number of Arrays in an Array
+
+// function numOfSubbarrays(arr) {
+// 	let res = arr.filter(elem => typeof elem == "object");
+// 	return res.length;
+// }
+
+// ? Task #15
+// ? Sum of all Evens in a Matrix
+
+// function sumOfEvens(arr) {
+// 	let res = arr.map(elem => {
+// 		return elem.filter(el => el % 2 === 0)
+// 	})
+// 		return res.flat(Infinity).reduce((acc, cur) => (Number(acc) + Number(cur)), 0);
+// }
+
+// ? Task #16
+// ? Back to Home?
+
+// function backToHome(directions){
+//     let arr = directions.split("");
+//       let res = arr.map(elem => elem === "N" ? 1 
+//                                        : elem === "E" ? 1 
+//                                        : elem === "S" ? -1
+//                                        : elem === "W" ? -1
+//                                        : 0)
+//       let sum = res.reduce((acc, cur) => (Number(acc) + Number(cur)), 0);
+      
+//       if(res.length === 6 && sum === 0)
+//           return false;
+//       else if(sum === 0)
+//           return true ;
+//       return false;
+//   }
+
+// let myBtn = document.querySelector(".my-button");
+
+// myBtn.onclick = () => {
+//     let strInput = document.querySelector(".str-inp");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = backToHome(strInput.value);
+// }
+
+// ? Task #17
+// ? Even Index Elements in Array
+
+// function evenLast(arr) {
+// 	let evenIndex = arr.filter((elem, index) => index % 2 === 0)
+// 	let sum = evenIndex.reduce((acc, cur) => (Number(acc) + Number(cur)), 0)
+// 	if(arr.length === 0)
+// 		return 0
+// 	return sum * arr[arr.length - 1] 
+// }
+
+// let myBtn = document.querySelector(".my-button");
+
+// myBtn.onclick = () => {
+//     let arrInput = document.querySelector(".arr-inp");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = evenLast(arrInput.value.trim().split(" "));
+// }
+
+// ? Task #18
+// ? No Hidden Fees
+
+// function hasHiddenFee(prices, t) {
+// 	let res = prices.map(elem => Number(elem.slice(1, elem.length)));
+// 	let sum = res.reduce((acc, cur) => acc + cur, 0);
+// 	let total = Number(t.slice(1, t.length));
+// 	return total  > sum ? true : false
+// }
+
+// ? Task #19
+// ? Mini Peaks
+
+// function miniPeaks(arr) {
+// 	let myArr = [];
+// 	for(let i =0; i < arr.length; i++)
+// 		{
+// 			if(arr[i + 1] > arr[i] && arr[i + 1] > arr[i + 2])
+// 				{
+// 					myArr.push(arr[i+1])
+// 				}
+// 		}
+// 	return myArr;
+// }
+
+// let myBtn = document.querySelector(".my-button");
+
+// myBtn.onclick = () => {
+//     let arrInput = document.querySelector(".arr-inp");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = miniPeaks(arrInput.value.trim().split(" "));
+// }
+
+// ? Task #20
+// ? Count Letters in a Word Search
+
+// function letterCounter(arr, letter) {
+// 	let res = arr.flat(Infinity).filter(elem => elem === letter);
+// 	return res.length;
+// }
+
+// let myBtn = document.querySelector(".my-button");
+
+// myBtn.onclick = () => {
+//     let arrInput = document.querySelector(".arr-inp");
+//     let input = document.querySelector(".inp");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = letterCounter(arrInput.value.trim().split(" "), input.value);
+// }
